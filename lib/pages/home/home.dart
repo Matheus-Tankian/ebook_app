@@ -1,4 +1,5 @@
 import 'package:ebook_app/constants/colors.dart';
+import 'package:ebook_app/pages/home/widgets/book_staggered_grid_view.dart';
 import 'package:ebook_app/pages/home/widgets/custom_tab.dart';
 import 'package:flutter/material.dart';
 
@@ -27,6 +28,15 @@ class _HomePageState extends State<HomePage> {
                 });
                 pageController.jumpToPage(index);
               }),
+          Expanded(
+              child: BookStaggeredGridView(
+                tabIndex,
+                pageController,
+                (int index) => setState(() {
+                  tabIndex = index;
+                  }),
+              ),
+          ),
         ],
       ),
     );
