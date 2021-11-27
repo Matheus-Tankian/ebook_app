@@ -1,5 +1,6 @@
 import 'package:ebook_app/constants/colors.dart';
 import 'package:ebook_app/models/book.dart';
+import 'package:ebook_app/pages/detail/widgets/book_cover.dart';
 import 'package:ebook_app/pages/detail/widgets/book_detail.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class DetailPage extends StatelessWidget {
         child: Column(
           children: [
             BookDetail(book),
+            BookCover(book),
           ],
         ),
       ),
