@@ -2,6 +2,7 @@ import 'package:ebook_app/constants/colors.dart';
 import 'package:ebook_app/models/book.dart';
 import 'package:flutter/material.dart';
 
+
 class BookCover extends StatelessWidget {
   final Book book;
   const BookCover(this.book, {Key? key}) : super(key: key);
@@ -15,6 +16,7 @@ class BookCover extends StatelessWidget {
       child: Stack(
         children: [
           Container(
+
             padding: const EdgeInsets.only(left: 50),
             width: MediaQuery.of(context).size.width - 20,
             decoration: const BoxDecoration(
@@ -29,7 +31,7 @@ class BookCover extends StatelessWidget {
                   topLeft: Radius.circular(50),
                   bottomLeft: Radius.circular(50),
                 ),
-                
+
                 child: Image.asset(
                   book.imgUrl,
                   fit: BoxFit.cover,
