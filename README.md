@@ -1,5 +1,8 @@
 # ebook_app
 
+![home](https://github.com/Matheus-Tankian/ebook_app/blob/main/Screenshot_1638068071.png)
+![detail](https://github.com/Matheus-Tankian/ebook_app/blob/main/Screenshot_1638068096.png)
+
 A new Flutter project.
 
 ## Getting Started
